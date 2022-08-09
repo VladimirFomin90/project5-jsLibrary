@@ -101,4 +101,9 @@
             background-color: $dark;
         }
     }
+
+    &-block {
+        display: block;
+        width: 100%;
+    }
 }

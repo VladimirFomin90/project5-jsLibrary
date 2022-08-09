@@ -84,3 +84,166 @@
     color: #343a40; }
     .btn-outline-dark:hover {
       background-color: #343a40; }
+  .btn-block {
+    display: block;
+    width: 100%; }
+
+.dropdown {
+  position: relative; }
+  .dropdown-toggle::after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: 3px;
+    border-top: solid 4px;
+    border-right: solid 4px transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent; }
+
+.text-center {
+  text-align: center; }
+
+.block-center {
+  margin: 0 auto; }
+
+.hidden {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.d-none {
+  display: none; }
+
+.d-block {
+  display: block; }
+
+.d-flex {
+  display: flex; }
+
+.f-centered {
+  justify-content: center;
+  align-items: center; }
+
+.f-space-around {
+  justify-content: space-around; }
+
+.f-space-between {
+  justify-content: space-between; }
+
+.fz-16 {
+  font-size: 16px; }
+
+.fz-20 {
+  font-size: 20px; }
+
+.fz-24 {
+  font-size: 24px; }
+
+.bold {
+  font-weight: bold; }
+
+.thin {
+  font-weight: 300; }
+
+.italic {
+  font-style: italic; }
+
+.text-color-primary {
+  color: #025fff; }
+
+.text-color-danger {
+  color: #ea2e41; }
+
+.text-color-success {
+  color: #2a9924; }
+
+.text-color-warning {
+  color: #ffc907; }
+
+.text-color-dark {
+  color: #343a40; }
+
+.m10 {
+  margin: 10px; }
+
+.m20 {
+  margin: 20px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.p10 {
+  padding: 10px; }
+
+.p20 {
+  padding: 20px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.w-100 {
+  width: 100%; }
+
+.w-50 {
+  width: 50%; }
+
+.w-300 {
+  width: 300px; }
+
+.w-500 {
+  width: 500px; }
+
+.w-100 {
+  height: 100%; }
+
+.w-50 {
+  height: 50%; }
+
+.w-300 {
+  height: 300px; }
+
+.w-500 {
+  height: 500px; }

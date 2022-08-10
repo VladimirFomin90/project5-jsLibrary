@@ -1,7 +1,7 @@
 import $ from '../core';
 
 $.prototype.on = function(eventName, callback) {
-    if(!eventName || !callback) {
+    if (!eventName || !callback) {
         return this;
     }
 
@@ -12,7 +12,7 @@ $.prototype.on = function(eventName, callback) {
 };
 
 $.prototype.off = function(eventName, callback) {
-    if(!eventName || !callback) {
+    if (!eventName || !callback) {
         return this;
     }
 
@@ -24,12 +24,11 @@ $.prototype.off = function(eventName, callback) {
 
 $.prototype.click = function(handler) {
     for (let i = 0; i < this.length; i++) {
-        if(handler) {
-            this[i].removeEventListener('click', handler);
+        if (handler) {
+            this[i].addEventListener('click', handler);
         } else {
             this[i].click();
         }
-
     }
     return this;
 };

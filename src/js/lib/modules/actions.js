@@ -2,7 +2,7 @@ import $ from '../core';
 
 $.prototype.html = function(content) {
     for (let i = 0; i < this.length; i++) {
-        if(content) {
+        if (content) {
             this[i].innerHTML = content;
         } else {
             return this[i].innerHTML;
@@ -22,7 +22,6 @@ $.prototype.eq = function(i) {
 
     this[0] = swap;
     this.length = 1;
-
     return this;
 };
 
@@ -40,15 +39,16 @@ $.prototype.index = function() {
 $.prototype.find = function(selector) {
     let numberOfItems = 0;
     let counter = 0;
+
     const copyObj = Object.assign({}, this);
 
-    for(let i = 0; i < copyObj.length; i++) {
+    for (let i = 0; i < copyObj.length; i++) {
         const arr = copyObj[i].querySelectorAll(selector);
-        if(arr.length == 0) {
+        if (arr.length == 0) {
             continue;
         }
 
-        for(let j = 0; j < arr.length; j++) {
+        for (let j = 0; j < arr.length; j++) {
             this[counter] = arr[j];
             counter++;
         }
@@ -59,7 +59,7 @@ $.prototype.find = function(selector) {
     this.length = numberOfItems;
 
     const objLength = Object.keys(this).length;
-    for(; numberOfItems < objLength; numberOfItems++) {
+    for (; numberOfItems < objLength; numberOfItems++) {
         delete this[numberOfItems];
     }
 
@@ -69,13 +69,13 @@ $.prototype.find = function(selector) {
 $.prototype.closest = function(selector) {
     let counter = 0;
 
-    for(let i = 0; i < this.length; i++) {
+    for (let i = 0; i < this.length; i++) {
         this[i] = this[i].closest(selector);
         counter++;
     }
 
     const objLength = Object.keys(this).length;
-    for(; counter < objLength; counter++) {
+    for (; counter < objLength; counter++) {
         delete this[counter];
     }
 
@@ -88,11 +88,11 @@ $.prototype.siblings = function() {
 
     const copyObj = Object.assign({}, this);
 
-    for(let i = 0; i < copyObj.length; i++) {
+    for (let i = 0; i < copyObj.length; i++) {
         const arr = copyObj[i].parentNode.children;
 
-        for(let j = 0; j < arr.length; j++) {
-            if(copyObj[i] === arr[j]) {
+        for (let j = 0; j < arr.length; j++) {
+            if (copyObj[i] === arr[j]) {
                 continue;
             }
 
@@ -106,7 +106,7 @@ $.prototype.siblings = function() {
     this.length = numberOfItems;
 
     const objLength = Object.keys(this).length;
-    for(; numberOfItems < objLength; numberOfItems++) {
+    for (; numberOfItems < objLength; numberOfItems++) {
         delete this[numberOfItems];
     }
 

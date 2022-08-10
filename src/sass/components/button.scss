@@ -13,55 +13,49 @@
     line-height: 1.5;
     transition: all 0.2s;
     &:hover {
-        border-color: lighten($primary, 10%);
+        background-color: lighten($primary, 10%);
         color: #fff;
     }
-
     &-primary {
         background-color: $primary;
         border-color: $primary;
-        color: white;
+        color: #fff;
         &:hover {
-            background-color: darken($primary, 20%);
+            background-color: darken($primary, 10%);
         }
     }
-
     &-success {
         background-color: $success;
         border-color: $success;
-        color: white;
+        color: #fff;
         &:hover {
-            background-color: darken($success, 20%);
+            background-color: darken($success, 10%);
         }
     }
-
-    &-warning {
-        background-color: $warning;
-        border-color: $warning;
-        color: white;
-        &:hover {
-            background-color: darken($warning, 20%);
-        }
-    }
-
     &-danger {
         background-color: $danger;
         border-color: $danger;
-        color: white;
+        color: #fff;
         &:hover {
-            background-color: darken($danger, 20%);
+            background-color: darken($danger, 10%);
         }
     }
-
+    &-warning {
+        background-color: $warning;
+        border-color: $warning;
+        color: #fff;
+        &:hover {
+            background-color: darken($warning, 10%);
+        }
+    }
     &-dark {
         background-color: $dark;
         border-color: $dark;
-        color: white;
+        color: #fff;
         &:hover {
-            background-color: darken($dark, 20%);
+            background-color: darken($dark, 10%);
         }
     }
-
     &-outline-primary {
         border-color: $primary;
         color: $primary;
@@ -69,7 +63,6 @@
             background-color: $primary;
         }
     }
-
     &-outline-success {
         border-color: $success;
         color: $success;
@@ -77,15 +70,6 @@
             background-color: $success;
         }
     }
-
-    &-outline-warning {
-        border-color: $warning;
-        color: $warning;
-        &:hover {
-            background-color: $warning;
-        }
-    }
-
     &-outline-danger {
         border-color: $danger;
         color: $danger;
@@ -93,7 +77,13 @@
             background-color: $danger;
         }
     }
-
+    &-outline-warning {
+        border-color: $warning;
+        color: $warning;
+        &:hover {
+            background-color: $warning;
+        }
+    }
     &-outline-dark {
         border-color: $dark;
         color: $dark;
@@ -101,7 +91,6 @@
             background-color: $dark;
         }
     }
-
     &-block {
         display: block;
         width: 100%;

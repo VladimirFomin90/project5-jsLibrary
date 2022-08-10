@@ -1,6 +1,6 @@
 import $ from '../core';
 
-$.prototype.addClass = function(...classNames) {
+$.prototype.addClass = function(...classNames){
     for (let i = 0; i < this.length; i++) {
         this[i].classList.add(...classNames);
     }
@@ -8,7 +8,7 @@ $.prototype.addClass = function(...classNames) {
     return this;
 };
 
-$.prototype.removeClass = function(...classNames) {
+$.prototype.removeClass = function(...classNames){
     for (let i = 0; i < this.length; i++) {
         this[i].classList.remove(...classNames);
     }
@@ -16,7 +16,7 @@ $.prototype.removeClass = function(...classNames) {
     return this;
 };
 
-$.prototype.toggleClass = function(classNames) {
+$.prototype.toggleClass = function(classNames){
     for (let i = 0; i < this.length; i++) {
         this[i].classList.toggle(classNames);
     }

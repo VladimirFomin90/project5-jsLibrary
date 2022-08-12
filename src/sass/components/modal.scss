@@ -1,0 +1,24 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    // display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0, .5);
+    &-dialog {
+        max-width: 500px;
+        margin: 40px auto;
+    }
+    &-content {
+        position: relative;
+        width: 100%;
+        background-color: white;
+        border: solid 1px rgba(0,0,0, .2);
+        border-radius: 4px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}

@@ -44,3 +44,6 @@ $('#trigger').click(() => $('#trigger').createModal({
         ]
     }
 }));
+
+$().get('https://gorest.co.in/public/v2/comments')
+    .then(res => console.log(res));
